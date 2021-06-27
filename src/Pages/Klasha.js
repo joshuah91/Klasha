@@ -31,9 +31,14 @@ const useStyle = makeStyles((theme) => ({
   total: {
     marginLeft: "20px",
     marginTop: "15px",
-    fontSize: "14px",
+    fontSize: "18px",
     fontFamily: "Founders Grotesk",
     color: "#2C665D",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "14px",
+      marginBottom: "-15px",
+      marginLeft: "10px",
+    },
   },
   totalgrid: {
     display: "flex",
@@ -50,7 +55,9 @@ const useStyle = makeStyles((theme) => ({
     paddingTop: "19px",
     borderTop: "1px solid #EBEBEB",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "16px",
+      fontSize: "12px",
+      marginLeft: "10px",
+      marginRight: "10px",
     },
   },
   subtotal: {
@@ -60,29 +67,37 @@ const useStyle = makeStyles((theme) => ({
     marginLeft: "20px",
     marginTop: "8px",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "10px",
+      fontSize: "9px",
+      marginTop: "2px",
+      marginLeft: "10px",
+      marginRight: "10px",
     },
   },
+
   currencygrid: {
     display: "flex",
     flexDirection: "column",
   },
   select: {
     height: "25px",
-    marginLeft: "17px",
+    marginLeft: "1px",
     marginTop: "15px",
-    width: "80px",
+    width: "100px",
     border: "1px solid #F5F5F5",
     borderRadius: "4px",
     backgroundColor: "#F5F5F5", 
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "-20px",
-      width: "70px",
+      marginLeft: "-15px",
+      width: "50px",
+      fontSize: "11px",
     },
   },
   menu: {
     fontSize: "14px",
-    marginTop: "-10px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "11px",
+      marginTop: "-15px",
+    },
   },
   curList: {
     marginTop: "10px",
@@ -93,8 +108,9 @@ const useStyle = makeStyles((theme) => ({
     height: "97px",
     boxSizing: "border-box",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "-10px",
-      width: "60px",
+      marginLeft: "-15px",
+      width: "51px",
+      height: "88px",
     },
   },
   curLists: {
@@ -104,6 +120,9 @@ const useStyle = makeStyles((theme) => ({
     fontWeight: "700",
     padding: "4px",
     marginTop: "2px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "12px",
+    },
   },
   funds: {
     border: "1px solid #EBEBEB",
@@ -117,27 +136,33 @@ const useStyle = makeStyles((theme) => ({
     color: "#2A2A2A",
     marginLeft: "20px",
     marginTop: "25px",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "5px",
+    },
   },
   totalnumberr: {
-    marginLeft: "-37px",
+    marginLeft: "-56px",
     marginRight: "68px",
-    marginTop: "8px",
+    marginTop: "13px",
     paddingTop: "19px",
     borderTop: "1px solid #EBEBEB",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "-5px",
+      marginTop: "35px",
+      width: "90px",
     },
   },
   fundNumber: {
-    marginLeft: "55px",
+    marginLeft: "75px",
     marginTop: "10px",
     fontFamily: "Space Grotesk",
     fontSize: "36px",
     fontWeight: "700",
     color: "#2A2A2A",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "16px",
-      marginLeft: "23px",
+      fontSize: "14px",
+      marginLeft: "8px",
+      marginTop: "0px",
     },
   },
   payoutTable: {
@@ -161,8 +186,8 @@ const useStyle = makeStyles((theme) => ({
     color: "#A6ABB2",
     padding: "10px",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "30px",
-      width: "290px",
+      marginLeft: "0px",
+      width: "250px",
     },
   },
   monthInput: {
@@ -191,7 +216,7 @@ const useStyle = makeStyles((theme) => ({
     marginLeft: "26px",
     textDecoration: "none",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "180px",
+      marginLeft: "10px",
       marginTop: "10px",
     },
   },
@@ -204,6 +229,7 @@ const useStyle = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       marginLeft: "80px",
       marginTop: "10px",
+      marginRight: "35px",
     },
   },
 }));
@@ -272,8 +298,8 @@ const Klasha = () => {
         <Grid container xs={12}>
           <Navbar />
         </Grid>
-        <Grid container xs={7}className={classes.totalarea}>
-          <Grid item xs={5} className={classes.totalgrid}>
+        <Grid container xs={8} className={classes.totalarea}>
+          <Grid item xs={4} className={classes.totalgrid}>
             <Typography className={classes.total}>
               Total account balance
             </Typography>
@@ -313,7 +339,7 @@ const Klasha = () => {
               </Typography>
             </Grid>
           </Grid>
-          <Grid item xs={5} className={classes.funds}>
+          <Grid item xs={6} className={classes.funds}>
             <Typography className={classes.fund}>
               Funds on hold
             </Typography>
