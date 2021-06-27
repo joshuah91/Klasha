@@ -3,7 +3,6 @@ import {
   Drawer,
   makeStyles,
   Grid,
-  Avatar,
   List,
   ListItem,
   ListSubheader,
