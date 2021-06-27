@@ -315,7 +315,7 @@ const Klasha = () => {
           </Grid>
           <Grid item xs={5} className={classes.funds}>
             <Typography className={classes.fund}>
-              Funds on hold
+              Funds on holdup
             </Typography>
             <div className={classes.totalnumberr}>
             <Typography className={classes.fundNumber}>
