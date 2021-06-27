@@ -147,6 +147,7 @@ const useStyle = makeStyles((theme) => ({
     flexDirection: "row",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "80px",
+      flexFlow: "row wrap",
     },
   },
   searchInput: {
@@ -161,7 +162,7 @@ const useStyle = makeStyles((theme) => ({
     padding: "10px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "30px",
-      width: "230px",
+      width: "290px",
     },
   },
   monthInput: {
@@ -190,7 +191,7 @@ const useStyle = makeStyles((theme) => ({
     marginLeft: "26px",
     textDecoration: "none",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "125px",
+      marginLeft: "180px",
       marginTop: "10px",
     },
   },

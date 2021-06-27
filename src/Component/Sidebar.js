@@ -122,36 +122,6 @@ const useStyle = makeStyles((theme) => ({
       width: "100px",
     },
   },
-  // balance: {
-  //   [theme.breakpoints.down("sm")]: {
-  //     flex: "1",
-  //     marginLeft: "30px",
-  //     marginTop: "22px",
-  //     fontFamily: "Space Grotesk",
-  //     fontWeight: "700",
-  //     fontSize: "18px",
-  //     lineHeight: "21.6px",
-  //     color: "#2A2A2A",
-  //   },
-  // },
-  // date: {
-  //   marginTop: "-5rem",
-  //   marginLeft: "5rem",
-  // },
-  // subbalance: {
-  //     marginTop: "48px",
-  //     marginRight: "15rem",
-  //     fontFamily: "Founder Grotesk",
-  //     fontSize: "12px",
-  //     lineHeight: "14px",
-  //     color: "#A6ABB2",
-  // },
-  // large: {
-  //   border: "1px solid #FF8377",
-  //   marginTop: "22px",
-  //   padding: "5px",
-  //   marginLeft: "7px",
-  // },
 
   gridMobile: {
     display: "block",
